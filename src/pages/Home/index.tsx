@@ -1,6 +1,6 @@
 import Hero from "../../components/Hero";
 import ProductsList from "../../components/ProductsList";
-import Receita from "../../models";
+import { Receita } from "../../models";
 
 import prato1 from '../../assets/images/comida1.png'
 import prato2 from '../../assets/images/comida2.png'

@@ -1,4 +1,4 @@
-import { ContainerPage, Imagem, Texto, LinkProduto, ImageSec, ImagemHeader, TextoCate, TextoTitulo } from "./styles"
+import { ContainerPage, Imagem, Texto, LinkProduto, ImageSec, ImagemHeader, TextoCate, TextoTitulo, ImagemOverlay } from "./styles"
 
 import heroImagem from '../../assets/images/Hero.png'
 import logo from '../../assets/images/logo.svg.svg'
@@ -15,6 +15,7 @@ const Header = () => (
         </ContainerPage>
         <ImagemHeader>
             <ImageSec src={ImageHeader} alt="Header" />
+            <ImagemOverlay />
             <TextoCate>Italiana</TextoCate>
             <TextoTitulo>La Dolce Vita Trattoria</TextoTitulo>
         </ImagemHeader>

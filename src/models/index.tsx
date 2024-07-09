@@ -1,4 +1,4 @@
-class Receita {
+export class Receita {
     title: string
     category:string
     description: string
@@ -29,4 +29,21 @@ class Receita {
     }
 }
 
-export default Receita
+export class Categoria {
+    title: string
+    description: string
+    image: string
+    id: number
+
+    constructor(
+        id: number,
+        title: string,
+        description: string,
+        image: string,
+    ) {
+        this.id = id
+        this.title = title
+        this.description = description
+        this.image = image
+    }
+}

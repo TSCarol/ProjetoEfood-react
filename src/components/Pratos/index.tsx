@@ -1,6 +1,6 @@
 import { CardPage, ImagemCard, TituloCard, DescriptionCard } from './styles';
 
-import { TagButtonPage } from '../../components/Tag/styles';
+import { TagButtonPage } from '../Tag/styles';
 
 type Props = {
     title: string;

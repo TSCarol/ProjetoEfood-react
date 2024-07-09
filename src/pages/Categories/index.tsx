@@ -1,8 +1,8 @@
-import ReceitaList from "../../components2/PratosList";
-import Categoria from "../../modelsPage";
+import ReceitaList from "../../components/PratosList";
+import {Categoria} from "../../models/index";
 
 import Prato from '../../assets/images/image3.png'
-import Header from "../../components2/Header";
+import Header from "../../components/Header";
 
 const categorias: Categoria[] = [
     {

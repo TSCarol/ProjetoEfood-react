@@ -1,4 +1,4 @@
-import Receita from "../../models";
+import { Receita } from "../../models/index";
 import Product from "../Product";
 import { Container, List } from "./styles";
 

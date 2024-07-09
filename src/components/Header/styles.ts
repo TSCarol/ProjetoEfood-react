@@ -10,8 +10,8 @@ export const ContainerPage = styled.div`
 `
 
 export const Imagem = styled.div`
-    width: 100%;
-    height: 186px;
+    width: 2031.81px;
+    height: 163px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +22,7 @@ export const Imagem = styled.div`
     img {
             width: 125px;
             height: 57.5px;
-            margin-bottom: 65.5px;
+            margin-top: -23px;
         }
 `
 
@@ -34,7 +34,7 @@ export const Texto = styled.p`
     color: ${cores.rosa};
     position: absolute;
     top: 59px;
-    left: 171px;
+    left: 250px;
 `
 
 export const LinkProduto = styled.a`
@@ -44,11 +44,9 @@ export const LinkProduto = styled.a`
     text-align: right;
     color: ${cores.rosa};
     position: absolute;
-    width: 256px;
-    height: 21px;
     top: 59px;
-    left: 939px;
-    margin-left: 193px;
+    right: 250px; 
+    width: 256px; 
 `
 export const ImagemHeader = styled.div`
     position: relative;
@@ -62,12 +60,22 @@ export const ImageSec = styled.img`
     height: auto;
 `
 
+export const ImagemOverlay = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+`
+
 export const TextoCate = styled.p`
     font-size: 32px;
+    font-weight: 100;
     color: ${cores.branco};
     position: absolute;
     top: 25px;
-    margin-left: 171px;
+    left: 250px;
 `
 
 export const TextoTitulo = styled.p`
@@ -75,6 +83,6 @@ export const TextoTitulo = styled.p`
     font-weight: bold;
     color: ${cores.branco};
     position: absolute;
-    left: 171px;
+    left: 250px;
     bottom: 32px;
 `

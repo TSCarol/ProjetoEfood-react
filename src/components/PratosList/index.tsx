@@ -1,4 +1,4 @@
-import Categoria from "../../modelsPage"
+import { Categoria } from "../../models"
 import Receita from "../Pratos"
 import { ContainerPage, ListPage } from "./styles"
 
