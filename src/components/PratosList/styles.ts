@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const ContainerPage = styled.section`
-    margin: 56px 171px; 
+    margin: 56px auto-171px;
     width: calc(100% - 342px);
     max-width: 1440px; 
     min-height: 708px; 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin: 56px auto;
     margin-bottom: 120px;
 `
 
@@ -16,7 +17,7 @@ export const ListPage = styled.ul`
     grid-template-columns: repeat(3, 1fr); 
     gap: 32px;
     list-style: none;
-    margin: 0 171px; 
+    padding: 0 171px; 
     max-width: 100%; 
     box-sizing: border-box; 
 

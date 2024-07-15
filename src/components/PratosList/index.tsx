@@ -1,21 +1,23 @@
-import { Categoria } from "../../models"
-import Receita from "../Pratos"
 import { ContainerPage, ListPage } from "./styles"
+import Receita from "../Pratos"
+import { CardapioItem } from '../../pages/Categories'
 
 type Props = {
-    categorias: Categoria[];
-}
+    categorias: CardapioItem[];
+    abrirModal: (item: CardapioItem) => void;
+};
 
-const ReceitaList = ({ categorias }: Props) => (
+const ReceitaList = ({ categorias, abrirModal }: Props) => (
     <ContainerPage>
         <div>
             <ListPage>
                 {categorias.map((categoria) => (
                     <Receita 
                         key={categoria.id}
-                        title={categoria.title}
-                        description={categoria.description}
-                        image={categoria.image}
+                        title={categoria.nome} 
+                        description={categoria.descricao} 
+                        image={categoria.foto} 
+                        abrirModal={() => abrirModal(categoria)}
                     />
                 ))} 
             </ListPage>

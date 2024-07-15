@@ -13,15 +13,14 @@ type Props = {
     image: string;
     nota: string;
     primeiro?: boolean;
+    destacado: boolean;
 }
 
-const Product = ({ title, category, description, infos, image, nota }: Props) => {
+const Product = ({ title, category, description, infos, image, nota, destacado }: Props) => {
     const navigate = useNavigate();
 
     const handleButtonClick = () => {
-        if (category === "Italiana") {
-            navigate("/categorias");
-        }
+        navigate(`/categorias/${category.toLowerCase()}`);
     }
 
 
@@ -31,6 +30,7 @@ const Product = ({ title, category, description, infos, image, nota }: Props) =>
                 <img src={image} alt={title}/>
                 <TagInfo>
                     {infos.map(info => <Tag key={info}>{info}</Tag>)}
+                    {destacado && <Tag>Destacado</Tag>}
                     <Tag>{category}</Tag>
                 </TagInfo>
             </ImagemCard>
@@ -50,10 +50,5 @@ const Product = ({ title, category, description, infos, image, nota }: Props) =>
         </Card>
     )
 }
-
-
-
-   
-
 
 export default Product

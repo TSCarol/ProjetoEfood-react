@@ -32,6 +32,7 @@ export class Receita {
 export class Categoria {
     title: string
     description: string
+    shortDescription: string
     image: string
     id: number
 
@@ -39,11 +40,13 @@ export class Categoria {
         id: number,
         title: string,
         description: string,
+        shortDescription: string,
         image: string,
     ) {
         this.id = id
         this.title = title
         this.description = description
+        this.shortDescription = shortDescription
         this.image = image
     }
 }

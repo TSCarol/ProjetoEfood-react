@@ -29,5 +29,4 @@ export const TagButtonPage = styled.button`
     height: 24px;
     color: ${cores.rosaClaro};
     border: none;
-
 `

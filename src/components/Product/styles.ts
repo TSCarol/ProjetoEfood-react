@@ -60,9 +60,8 @@ export const Titulo = styled.h3`
 
 export const Descricao = styled.p`
     width: 456px;
-    height: 88px;
+    height: 70px;
     font-size: 14px;
-    line-height: 22px;
     display: block;
     margin-left: 8px;
     color: ${cores.rosa};

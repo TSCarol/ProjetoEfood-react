@@ -23,14 +23,19 @@ export const CardPage = styled.div`
     }
 `
 export const ImagemCard = styled.div`
-    width: 304px;
+    width: 100%;
     height: 167px;
-    margin-bottom: 8px;
-    
+    overflow: hidden;
+    position: relative;
+
     img {
-        padding-top: 8px;
-        padding-left: 8px;
-        padding-right:8px;
+        width: 100%;
+        height: 100%
+        display: block;
+        object-fit: cover; 
+        object-position: center;
+        display: block;
+        padding: 8px;
     }
 `
 
@@ -43,8 +48,7 @@ export const TituloCard = styled.h2`
 `
 
 export const DescriptionCard = styled.p`
-    font-size: 14px;
+    font-size: 12px;
     color: ${cores.rosaClaro};
-    Line height: 22px;
     margin: 8px;
 `

@@ -1,25 +1,45 @@
-import { Receita } from "../../models/index";
 import Product from "../Product";
 import { Container, List } from "./styles";
 
+
+type Categoria = {
+    id: number;
+    titulo: string;
+    tipo: string;
+    avaliacao: number;
+    descricao: string;
+    capa: string;
+    cardapio: cardapioItem[];
+    destacado: boolean;
+};
+
+type cardapioItem = {
+    foto: string;
+    preco: number;
+    id: number;
+    nome: string;
+    descricao: string;
+    porcao: string;
+};
+
 type Props = {
-    receitas: Receita[];
+    categorias: Categoria[];
 }
 
-const ProductsList = ({ receitas }: Props) => (
+const ProductsList = ({ categorias }: Props) => (
     <Container>
         <div>
             <List>
-                {receitas.map((receita, index) => (
+                {categorias.map((categoria) => (
                     <Product 
-                        key={receita.id}
-                        title={receita.title}
-                        category={receita.category}
-                        description={receita.description}
-                        infos={receita.infos}
-                        image={receita.image}
-                        nota={receita.nota}
-                        primeiro={index === 0}
+                        key={categoria.id}
+                        title={categoria.titulo}
+                        category={categoria.tipo}
+                        description={categoria.descricao}
+                        infos={[]} 
+                        image={categoria.capa}
+                        nota={categoria.avaliacao.toString()}
+                        destacado={categoria.destacado}
                     />
                 ))}
             </List>
