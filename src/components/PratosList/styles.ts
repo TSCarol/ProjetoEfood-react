@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles";
 
 export const ContainerPage = styled.section`
     margin: 56px auto-171px;
@@ -21,15 +22,7 @@ export const ListPage = styled.ul`
     max-width: 100%; 
     box-sizing: border-box; 
 
-    @media (max-width: 1024px) {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-
-    @media (max-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: 576px) {
-        grid-template-columns: repeat(1, 1fr); 
+    @media (max-width: ${breakpoints.desktop}) {
+        grid-template-columns: 1fr 1fr; 
     }
 `

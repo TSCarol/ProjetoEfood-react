@@ -1,11 +1,16 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { breakpoints, cores } from '../../styles'
 
 export const Imagem = styled.div`
   width: 100%;
   height: 384px;
   display: block;
   background-size: cover;
+
+
+  @media (max-width: ${breakpoints.tablet}) {
+    height: 200px;
+  }
 `
 
 export const Container = styled.div`
@@ -19,6 +24,11 @@ export const Container = styled.div`
         width: 125px;
         height: 57.5px;
         margin-top: 40px;
+
+        @media (max-width: ${breakpoints.tablet}) {
+            width: 100px;
+            height: 46px;
+        }
     }
 
     p {
@@ -26,5 +36,10 @@ export const Container = styled.div`
         margin-top: 138.5px;
         color: ${cores.rosa}; 
         font-weight: bold;
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      font-size: 24px;
+      margin-top: 70px;
     }
 `

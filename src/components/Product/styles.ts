@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cores } from "../../styles";
+import { breakpoints, cores } from "../../styles";
 import { TagButton, TagContainer } from "../Tag/styles";
 
 export const ImagemCard = styled.div`
@@ -11,6 +11,11 @@ export const ImagemCard = styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
+
+        @media (max-width: ${breakpoints.tablet}) {
+            width: 100%;
+            height: 180px;
+        }
     }
 `
 
@@ -21,6 +26,10 @@ export const TagInfo = styled.div`
     flex-direction: row;
     gap: 8px;
     bottom: 175px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+        bottom: 150px;
+    }
 `
 
 export const Card = styled.div`
@@ -49,6 +58,12 @@ export const Card = styled.div`
             font-weight: 700px;
         }
     }
+
+    @media (max-width: ${breakpoints.tablet}) {
+        max-width: 100%;
+        height: auto;
+        padding: 16px;
+    }
 `
 
 export const Titulo = styled.h3`
@@ -56,6 +71,10 @@ export const Titulo = styled.h3`
     font-weight: bold;
     color: ${cores.rosa};
     top: 8px;
+
+     @media (max-width: ${breakpoints.tablet}) {
+        font-size: 16px;
+    }
 `
 
 export const Descricao = styled.p`
@@ -65,6 +84,11 @@ export const Descricao = styled.p`
     display: block;
     margin-left: 8px;
     color: ${cores.rosa};
+
+    @media (max-width: ${breakpoints.tablet}) {
+        width: 100%;
+        height: auto;
+    }
 `
 
 export const NotaContainer = styled.div`
@@ -87,5 +111,9 @@ export const NotaContainer = styled.div`
         height: 21px;
         margin-left: 8px;
         margin-right: 8px;
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+        font-size: 16px;
     }
 `

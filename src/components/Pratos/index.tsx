@@ -19,10 +19,9 @@ const Pagina = ({ title, description, image, abrirModal }: Props) => (
             {description}
         </DescriptionCard>
         <TagButtonPage onClick={abrirModal}>
-            Adicionar ao carrinho
+            Mais detalhes
         </TagButtonPage> 
     </CardPage>
 )
 
 export default Pagina
-

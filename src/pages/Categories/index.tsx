@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import ReceitaList from "../../components/PratosList";
-import { Details } from "../../components/Details"
+import  Details from "../../components/Details"
 
 import Header from "../../components/Header";
 import axios from 'axios';
+import { useGetFeatureGameQuery } from "../../services/api"
 
 export type CardapioItem = {
     tipo: string,
@@ -47,6 +48,8 @@ const Categories = () => {
     });
 
     const { category } = useParams<{ category: string }>(); 
+    const navigate = useNavigate();
+    const { data, isLoading } = useGetFeatureGameQuery();
 
     useEffect(() => {
         if (category) {
@@ -73,7 +76,8 @@ const Categories = () => {
             <Details 
                 title={modalData.nome} 
                 description={modalData.descricao}
-                porcao={modalData.porcao} 
+                porcao={modalData.porcao}
+                preco={modalData.preco} 
                 image={modalData.foto} 
                 modalEstaAberto={modalEstaAberto}
                 fecharModal={fecharModal}

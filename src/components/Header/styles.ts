@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cores } from "../../styles";
+import { breakpoints, cores } from "../../styles";
 
 export const LogoContainer = styled.div`
     display: flex;
@@ -45,9 +45,32 @@ export const ContainerHeader = styled.header`
             }
         }
 
+        button {
+            flex: 1;
+            margin-top: 2px;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 21.09px;
+            text-decoration: none;
+            color: ${cores.rosa};
+            background-color: transparent;
+            border: none;
+
+            &:first-child {
+                text-align: left;
+            }
+            &:last-child {
+                text-align: right;
+            }
+        }
+
         img {
             margin-bottom: 10px;
         }
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+        display: none; 
     }
 `;
 
