@@ -11,10 +11,16 @@ export const ImagemCard = styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    
+    @media (max-width: ${breakpoints.tablet}) {
+        width: 100%; /* Certificar-se de que o container da imagem ocupe toda a largura do card */
+        height: 180px;
 
-        @media (max-width: ${breakpoints.tablet}) {
+        img {
             width: 100%;
-            height: 180px;
+            height: 100%;
+            object-fit: cover;
         }
     }
 `
@@ -28,7 +34,8 @@ export const TagInfo = styled.div`
     bottom: 175px;
 
     @media (max-width: ${breakpoints.tablet}) {
-        bottom: 150px;
+        bottom: 135px;
+        margin-right: -5px;
     }
 `
 
@@ -62,7 +69,10 @@ export const Card = styled.div`
     @media (max-width: ${breakpoints.tablet}) {
         max-width: 100%;
         height: auto;
-        padding: 16px;
+
+        ${ImagemCard} {
+            width: 100%;
+        }
     }
 `
 
@@ -88,6 +98,8 @@ export const Descricao = styled.p`
     @media (max-width: ${breakpoints.tablet}) {
         width: 100%;
         height: auto;
+        margin-bottom: 48px;
+        padding-right: 8px;
     }
 `
 

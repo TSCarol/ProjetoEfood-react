@@ -11,6 +11,12 @@ export const ContainerPage = styled.section`
     justify-content: center;
     margin: 56px auto;
     margin-bottom: 120px;
+
+     @media (max-width: ${breakpoints.tablet}) {
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
 `
 
 export const ListPage = styled.ul`
@@ -24,5 +30,11 @@ export const ListPage = styled.ul`
 
     @media (max-width: ${breakpoints.desktop}) {
         grid-template-columns: 1fr 1fr; 
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+        grid-template-columns: 1fr 1fr; 
+        padding: 0;
+        gap: 16px;
     }
 `

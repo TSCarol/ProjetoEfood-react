@@ -1,5 +1,4 @@
 import { Imagem, Container } from "./styles"
-
 import heroImg from '../../assets/images/Hero.png'
 import logo from '../../assets/images/logo.svg.svg'
 

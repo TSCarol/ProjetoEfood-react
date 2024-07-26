@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cores } from "../../styles";
+import { breakpoints, cores } from "../../styles";
 import { TagButtonPage } from "../Tag/styles";
 
 export const CardDetails = styled.div`
@@ -19,6 +19,12 @@ export const CardDetails = styled.div`
         width: 218px; 
         position: absolute;
         bottom: 59px;
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
     }
 `
 
@@ -105,4 +111,8 @@ export const ModalContent = styled.div`
     max-width: 1024px;
     position: relative;
     z-index: 1;
+
+    @media (max-width: ${breakpoints.tablet}) {
+        max-width: 90%;
+    }
 `

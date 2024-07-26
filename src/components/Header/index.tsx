@@ -1,11 +1,10 @@
+import { useDispatch, useSelector } from "react-redux"
+import { Link } from 'react-router-dom' 
 import {  ContainerHeader, ImagemHero } from "./styles"
-
 import heroImagem from '../../assets/images/Hero.png'
 import logo from '../../assets/images/logo.svg.svg'
 import ImageHeader from '../../assets/images/image2.png'
-
 import { open } from '../../store/reducers/cart'
-import { useDispatch, useSelector } from "react-redux"
 import { RootReducer } from "../../store"
 
 const Header = () => {
@@ -20,7 +19,7 @@ const Header = () => {
         <div>
             <ContainerHeader style={{backgroundImage: `url(${heroImagem})`}}>
                     <div className="container">
-                       <a href="#">Restaurantes</a>
+                        <Link to="/">Restaurantes</Link>
                         <img src={logo} alt="EFOOD" />
                         <button onClick={openCart}>
                             {items.length} produto(s) no carrinho

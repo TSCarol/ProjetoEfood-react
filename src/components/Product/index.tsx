@@ -1,9 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import { TagButton } from "../Tag/styles"
 import { Card, Titulo, Descricao, ImagemCard, NotaContainer, TagInfo } from "./styles"
-
 import logo from '../../assets/images/Page-1.svg'
 import Tag from "../Tag";
-import { useNavigate } from "react-router-dom";
 
 type Props = {
     title: string;

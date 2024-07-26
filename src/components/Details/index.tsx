@@ -1,13 +1,10 @@
-
+import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from "react";
 import { TagButtonPage } from "../Tag/styles";
 import { CardDetails, DescriptionDetails, ImagemCardDetails, Porcao, TextContainer, TituloDetails, Logo, Modal, ModalContent } from "./styles";
-
 import logo from '../../assets/images/close1.svg'
-import React, { useEffect } from "react";
 import { CardapioItem } from "../../pages/Categories";
-
 import { add, open } from '../../store/reducers/cart'
-import { useDispatch, useSelector } from "react-redux";
 import { RootReducer } from "../../store";
 
 type Props = {

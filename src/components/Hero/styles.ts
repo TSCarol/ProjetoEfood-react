@@ -36,10 +36,10 @@ export const Container = styled.div`
         margin-top: 138.5px;
         color: ${cores.rosa}; 
         font-weight: bold;
-    }
-
-    @media (max-width: ${breakpoints.tablet}) {
-      font-size: 24px;
-      margin-top: 70px;
+        
+        @media (max-width: ${breakpoints.tablet}) {
+          font-size: 24px;
+          margin-top: 20px;
+        }
     }
 `

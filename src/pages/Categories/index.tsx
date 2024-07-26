@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import axios from 'axios';
 import ReceitaList from "../../components/PratosList";
 import  Details from "../../components/Details"
-
 import Header from "../../components/Header";
-import axios from 'axios';
-import { useGetFeatureGameQuery } from "../../services/api"
+import { useGetFeatureGameQuery } from "../../services/api";
 
 export type CardapioItem = {
     tipo: string,

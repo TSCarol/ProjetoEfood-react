@@ -1,5 +1,24 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { breakpoints, cores } from "../../styles";
+
+
+export const StyledLink = styled(Link)`
+    flex: 1;
+    margin-top: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21.09px;
+    text-decoration: none;
+    color: ${cores.rosa};
+
+    &:first-child {
+        text-align: left;
+    }
+    &:last-child {
+        text-align: right;
+    }
+`;
 
 export const LogoContainer = styled.div`
     display: flex;
@@ -70,10 +89,14 @@ export const ContainerHeader = styled.header`
     }
 
     @media (max-width: ${breakpoints.tablet}) {
-        display: none; 
+        height: auto;
+        padding: 10px;
+        
+        .container {
+            padding: 0 40px; 
+        }
     }
 `;
-
 
 export const ImagemHero = styled.div`
     position: relative;
@@ -96,6 +119,30 @@ export const ImagemHero = styled.div`
         opacity: 0.5;
     }
 
+     @media (max-width: ${breakpoints.tablet}) {
+        height: auto;
+        padding: 80px;
+        
+        .container {
+            padding: 0px; 
+            position: relative; 
+        }
+
+        .text-container {
+            margin-top: -95px;
+            position: absolute;
+            margin-left: -30px; 
+        }
+
+        h2 {
+            text-align: left;
+        }
+
+        p { 
+            text-align: left;
+        }
+    }
+
     .container {
         z-index: 1;
         position: relative;
@@ -110,6 +157,11 @@ export const ImagemHero = styled.div`
             font-weight: bold;
             color: ${cores.branco};
             margin-top: 156.5px;
+
+            @media (max-width: ${breakpoints.tablet}) {
+                font-size: 22px;
+                margin-top: 70px;
+            }
         }
 
         p { 
@@ -117,6 +169,10 @@ export const ImagemHero = styled.div`
             font-weight: 100;
             color: ${cores.branco};
             margin-top: 25px;
+
+            @media (max-width: ${breakpoints.tablet}) {
+                font-size: 25px;
+            }
         }
-    }
+    } 
 `

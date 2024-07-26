@@ -1,7 +1,6 @@
 import Product from "../Product";
 import { Container, List } from "./styles";
 
-
 type Categoria = {
     id: number;
     titulo: string;

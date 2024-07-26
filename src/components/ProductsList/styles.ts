@@ -12,8 +12,10 @@ export const Container = styled.section`
 
 
     @media (max-width: ${breakpoints.tablet}) {
-        padding: 80px 15px;
-        margin: 40px auto;
+        padding: 60px 15px;
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
     }
 `
 
@@ -28,7 +30,7 @@ export const List = styled.ul`
     margin: 0;
 
     @media (max-width: ${breakpoints.tablet}) {
-        grid-template-columns: 1fr; /* Cards enfileirados em tablets */
+        grid-template-columns: 1fr; 
         gap: 24px;
     }
 `

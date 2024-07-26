@@ -1,5 +1,4 @@
 import { ContainerFooter, ImageFooter, Links, Link } from "./styles"
-
 import logo from '../../assets/images/logo.svg.svg'
 import Instagram from '../../assets/images/redessociais/instagram.svg'
 import Facebook from '../../assets/images/redessociais/facebook.svg'
