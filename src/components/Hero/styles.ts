@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoints, cores } from '../../styles'
+import { breakpoints, color } from '../../styles'
 
 export const Imagem = styled.div`
   width: 100%;
@@ -34,7 +34,7 @@ export const Container = styled.div`
     p {
         font-size: 36px;
         margin-top: 138.5px;
-        color: ${cores.rosa}; 
+        color: ${color.pink};
         font-weight: bold;
         
         @media (max-width: ${breakpoints.tablet}) {

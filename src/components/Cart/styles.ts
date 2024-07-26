@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cores } from "../../styles";
+import { color } from "../../styles";
 import { TagButtonPage } from "../Tag/styles";
 
 import fechar from '../../assets/images/lixeira.svg'
@@ -31,7 +31,7 @@ export const CartContainer = styled.div`
 
 export const Sidebar = styled.aside`
     z-index: 1;
-    background-color: ${cores.rosa};
+    background-color: ${color.pink};
     padding: 40px 8px 0 8px;
     max-width: 360px;
     min-width: 360px;
@@ -40,7 +40,7 @@ export const Sidebar = styled.aside`
     ${TagButtonPage} {
         font-size: 14px;
         font-weight: bold;
-        color: ${cores.rosa};
+        color: ${color.pink};
         position: relative;
         display: block;
         max-width: 100%;
@@ -60,13 +60,13 @@ export const PricesContainer = styled.div`
 export const Valor = styled.p`
     font-weight: bold;
     font-size: 14px;
-    color: ${cores.rosaClaro};
+    color: ${color.lightPink};
 `
 
 export const Prices = styled.p`
     font-weight: bold;
     font-size: 14px;
-    color: ${cores.rosaClaro};
+    color: ${color.lightPink};
 `
 
 export const CartItem = styled.li`
@@ -75,12 +75,12 @@ export const CartItem = styled.li`
     width: 344px;
     height: 100px;
     padding: 8px 8px 12px 8px;
-    background-color: ${cores.rosaClaro};
+    background-color: ${color.lightPink};
     position: relative;
 
     h3 {
         margin-left: 8px;
-        color: ${cores.rosa};
+        color: ${color.pink};
         font-weight: bold;
         font-size: 18px;
     }
@@ -90,7 +90,7 @@ export const CartItem = styled.li`
         margin-top: 16px;
         margin-left: 8px;
         margin-bottom: 33px;
-        color: ${cores.rosa};
+        color: ${color.pink};
         font-size: 14px;
     }
 

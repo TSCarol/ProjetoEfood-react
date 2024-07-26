@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { breakpoints, cores } from "../../styles";
+import { breakpoints, color } from "../../styles";
 import { TagButtonPage } from "../Tag/styles";
 
 export const CardDetails = styled.div`
     Width: 1024px;
     heigth: 344px;
-    background-color: ${cores.rosa};
+    background-color: ${color.pink};
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -15,7 +15,7 @@ export const CardDetails = styled.div`
     ${TagButtonPage} {
         font-size: 14px;
         font-weight: bold;
-        color: ${cores.rosa};
+        color: ${color.pink};
         width: 218px; 
         position: absolute;
         bottom: 59px;
@@ -51,14 +51,14 @@ export const TextContainer = styled.div`
 export const TituloDetails = styled.div`
     font-size: 18px;
     font-weight: bold;
-    color: ${cores.branco};
+    color: ${color.white};
     line-height: 21.09px;
     padding-top: 32px;
 `
 
 export const DescriptionDetails = styled.div`
     font-size: 14px;
-    color: ${cores.branco};
+    color: ${color.white};
     line-height: 22px;
     margin-right: 32px;
     margin-top: 16px;
@@ -67,7 +67,7 @@ export const DescriptionDetails = styled.div`
 
 export const Porcao = styled.div`
     font-size: 14px;
-    color: ${cores.branco};
+    color: ${color.white};
     line-height: 22px;
     margin-bottom: 16px;
 `

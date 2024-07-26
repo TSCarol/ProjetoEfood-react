@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakpoints, cores } from "../../styles";
+import { breakpoints, color } from "../../styles";
 import { TagButton, TagContainer } from "../Tag/styles";
 
 export const ImagemCard = styled.div`
@@ -42,8 +42,8 @@ export const TagInfo = styled.div`
 export const Card = styled.div`
     width: 472px;
     height: 398px;
-    border: 1px solid ${cores.rosa};
-    background-color: ${cores.branco};
+    border: 1px solid ${color.pink};
+    background-color: ${color.white};
     position: relative;
 
     ${TagContainer} {
@@ -79,7 +79,7 @@ export const Card = styled.div`
 export const Titulo = styled.h3`
     font-size: 18px;
     font-weight: bold;
-    color: ${cores.rosa};
+    color: ${color.pink};
     top: 8px;
 
      @media (max-width: ${breakpoints.tablet}) {
@@ -93,7 +93,7 @@ export const Descricao = styled.p`
     font-size: 14px;
     display: block;
     margin-left: 8px;
-    color: ${cores.rosa};
+    color: ${color.pink};
 
     @media (max-width: ${breakpoints.tablet}) {
         width: 100%;
@@ -107,7 +107,7 @@ export const NotaContainer = styled.div`
     display: flex;
     align-items: center;
     margin-top: 8px;
-    color: ${cores.rosa};
+    color: ${color.pink};
     font-size: 18px;
     font-weight: bold;
     padding: 8px;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cores } from "../../styles";
+import { color } from "../../styles";
 import { TagButtonPage } from "../Tag/styles";
 
 type InputGroupPayProps = {
@@ -23,7 +23,7 @@ export const CartContainer = styled.div`
 
 export const Sidebar = styled.aside`
     z-index: 1;
-    background-color: ${cores.rosa};
+    background-color: ${color.pink};
     padding: 32px 8px 0 7px;
     max-width: 360px;
     min-width: 360px;
@@ -32,14 +32,14 @@ export const Sidebar = styled.aside`
     h2 {
         font-size: 16px;
         font-weight: bold;
-        color: ${cores.rosaClaro};
+        color: ${color.lightPink};
         margin-bottom: 16px;
     }
 
     ${TagButtonPage} {
         font-size: 14px;
         font-weight: bold;
-        color: ${cores.rosa};
+        color: ${color.pink};
         margin-bottom: 8px;
         position: relative;
         display: block;
@@ -60,14 +60,14 @@ export const InputGroupPay = styled.div<InputGroupPayProps>`
     label {
         font-size: 14px;
         font-weight: bold;
-        color: ${cores.rosaClaro};
+        color: ${color.lightPink};
         margin-bottom: 8px;
         display: block;
     }
 
     
     input {
-        background-color: ${cores.rosaClaro};
+        background-color: ${color.lightPink};
         border: none;
         height: 32px;
         padding: 0 8px;

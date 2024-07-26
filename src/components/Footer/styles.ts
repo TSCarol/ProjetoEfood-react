@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-import { cores } from "../../styles";
+import { color } from "../../styles";
 
 export const ContainerFooter = styled.footer`
-    background-color: ${cores.rosaClaro};
+    background-color: ${color.lightPink};
     width: 100%;
     height: 298px auto;
     display: flex;
@@ -12,7 +12,7 @@ export const ContainerFooter = styled.footer`
     text-align: center;
      
     p {
-        color: ${cores.rosa};
+        color:${color.pink};
         font-size: 10px;
         width: 480px;
         height: 24px;

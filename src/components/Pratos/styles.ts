@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { cores } from "../../styles";
+import { color } from "../../styles";
 import { TagButtonPage } from "../Tag/styles";
 
 export const CardPage = styled.div`
     width: 320px;
     height: 338px;
-    background-color: ${cores.rosa};
+    background-color: ${color.pink};
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -17,7 +17,7 @@ export const CardPage = styled.div`
         margin-left: 8px;
         margin-bottom: 8px;
         margin-right: 8px;
-        color: ${cores.rosa};
+        color: ${color.pink};
         font-size: 14px;
         font-weight: bold;
     }
@@ -42,13 +42,13 @@ export const ImagemCard = styled.div`
 export const TituloCard = styled.h2`
     font-size: 16px;
     font-weight: bold;
-    color: ${cores.rosaClaro};
+    color: ${color.lightPink};
     padding-top: 8px;
     padding-left: 8px;
 `
 
 export const DescriptionCard = styled.p`
     font-size: 12px;
-    color: ${cores.rosaClaro};
+    color: ${color.lightPink};
     margin: 8px;
 `

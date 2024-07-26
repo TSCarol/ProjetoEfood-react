@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { breakpoints, cores } from "../../styles";
+import { breakpoints, color } from "../../styles";
 
 
 export const StyledLink = styled(Link)`
@@ -10,7 +10,7 @@ export const StyledLink = styled(Link)`
     font-weight: bold;
     line-height: 21.09px;
     text-decoration: none;
-    color: ${cores.rosa};
+    color: ${color.pink};
 
     &:first-child {
         text-align: left;
@@ -54,7 +54,7 @@ export const ContainerHeader = styled.header`
             font-weight: bold;
             line-height: 21.09px;
             text-decoration: none;
-            color: ${cores.rosa};
+            color: ${color.pink};
 
             &:first-child {
                 text-align: left;
@@ -71,7 +71,7 @@ export const ContainerHeader = styled.header`
             font-weight: bold;
             line-height: 21.09px;
             text-decoration: none;
-            color: ${cores.rosa};
+            color: ${color.pink};
             background-color: transparent;
             border: none;
 
@@ -155,7 +155,7 @@ export const ImagemHero = styled.div`
         h2 {
             font-size: 32px;
             font-weight: bold;
-            color: ${cores.branco};
+            color: ${color.white};
             margin-top: 156.5px;
 
             @media (max-width: ${breakpoints.tablet}) {
@@ -167,7 +167,7 @@ export const ImagemHero = styled.div`
         p { 
             font-size: 32px;
             font-weight: 100;
-            color: ${cores.branco};
+            color: ${color.white};
             margin-top: 25px;
 
             @media (max-width: ${breakpoints.tablet}) {
